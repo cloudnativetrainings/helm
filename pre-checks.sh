@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of container names or IDs to check
-containers=("cloud-provider-kind" "k8s-fund-for-dev-control-plane" "k8s-fund-for-dev-worker" "k8s-fund-for-dev-worker2")
+containers=("cloud-provider-kind" "k8s-helm-control-plane" "k8s-helm-worker" "k8s-helm-worker2")
 
 # Function to display colored output
 print_status() {
