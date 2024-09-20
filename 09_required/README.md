@@ -46,7 +46,7 @@ kubectl wait pod -l app.kubernetes.io/instance=required --for=condition=ready --
 
 Access the endpoint via 
 ```bash
-curl $INGRESS_IP
+curl ${INGRESS_IP}
 ```
 
 If you want to reach it via browser, you first need to port-forward ingress-nginx-controller service:

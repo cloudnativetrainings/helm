@@ -24,7 +24,7 @@ kubectl wait pod -l app=my-chart-my-app --for=condition=ready --timeout=120s
 Access the endpoint via
 
 ```bash
-curl http://$INGRESS_IP
+curl http://${INGRESS_IP}
 ```
 
 If you want to reach it via browser, you first need to port-forward ingress-nginx-controller service:
@@ -50,12 +50,14 @@ helm uninstall my-app
 
 ### Implement the function
 
-Create a file with the name `_helpers.tpl` in the folder `my-chart/templates` and copy the following content into it.
+Create a file with the name `_helpers.tpl` in the folder `my-chart/templates`:
 
-```tpl
+```bash
+/bin/cat <<EOF > my-chart/templates/_helpers.tpl
 {{- define "id" }}
 {{- printf "%s-%s" .Chart.Name .Release.Name }}
 {{- end }}
+EOF
 ```
 
 ### Make use of the `id` function
@@ -81,7 +83,7 @@ kubectl wait pod -l app=my-chart-helper-functions --for=condition=ready --timeou
 Access the endpoint via
 
 ```bash
-curl http://$INGRESS_IP
+curl http://${INGRESS_IP}
 ```
 
 >Note the output now gets calculated via the `id` function defined in the file `_helpers.tpl`. The expected output is `my-chart-helper-functions`

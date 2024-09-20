@@ -20,7 +20,7 @@ tree .
 Add the following function called `labels` into the file `_helpers.tpl` in the folder `my-chart/templates`
 
 ```bash
-cat <<EOF >> my-chart/templates/_helpers.tpl
+/bin/cat <<EOF >> my-chart/templates/_helpers.tpl
 
 {{- define "labels" -}}
 helm.sh/chart: {{ .Chart.Name | quote }}
@@ -76,7 +76,7 @@ kubectl wait pod -l app=includes --for=condition=ready --timeout=120s
 
 Access the endpoint via 
 ```bash
-curl http://$INGRESS_IP
+curl http://${INGRESS_IP}
 ```
 
 If you want to reach it via browser, you first need to port-forward ingress-nginx-controller service:

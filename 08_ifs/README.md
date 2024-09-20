@@ -55,7 +55,7 @@ kubectl wait pod -l  app.kubernetes.io/instance=ifs --for=condition=ready --time
 
 Access the endpoint via 
 ```bash
-curl http://$INGRESS_IP
+curl http://${INGRESS_IP}
 ```
 
 ## Upgrade the application
@@ -66,7 +66,7 @@ helm upgrade ifs ./my-chart --set meta=false
 
 Watch the endpoint via
 ```bash
-watch curl -s http://$INGRESS_IP
+watch curl -s http://${INGRESS_IP}
 ```
 
 > Question:
