@@ -109,7 +109,4 @@ echo "https://${CODESPACE_NAME}-80.app.github.dev/red"
 ```bash
 # delete the resources
 helm uninstall my-app
-
-# jump back to home directory `kubernetes_helm`:
-cd -
 ```

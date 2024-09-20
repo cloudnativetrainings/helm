@@ -124,7 +124,4 @@ echo "https://${CODESPACE_NAME}-80.app.github.dev/prod"
 # delete the releases
 helm uninstall demo-app -n dev
 helm uninstall demo-app -n prod
-
-# jump back to home directory `kubernetes_helm`:
-cd -
 ```

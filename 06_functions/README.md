@@ -103,7 +103,4 @@ echo "https://${CODESPACE_NAME}-80.app.github.dev/"
 ```bash
 # delete the resources
 helm uninstall helper-functions
-
-# jump back to home directory `kubernetes_helm`:
-cd -
 ```

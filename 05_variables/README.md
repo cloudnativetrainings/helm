@@ -41,7 +41,4 @@ kubectl get pods
 ```bash
 # delete the resources
 helm uninstall my-app
-
-# jump back to home directory `kubernetes_helm`:
-cd -
 ```

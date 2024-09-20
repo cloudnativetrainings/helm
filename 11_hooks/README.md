@@ -86,7 +86,4 @@ helm install hooks ./my-app --no-hooks
 ```bash
 # delete the resources
 helm uninstall hooks --no-hooks
-
-# jump back to home directory `kubernetes_helm`:
-cd -
 ```

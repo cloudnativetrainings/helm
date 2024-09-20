@@ -66,7 +66,4 @@ echo "https://${CODESPACE_NAME}-80.app.github.dev/"
 ```bash
 # delete the resources
 helm uninstall required
-
-# jump back to home directory `kubernetes_helm`:
-cd -
 ```

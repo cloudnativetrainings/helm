@@ -163,7 +163,4 @@ kubectl get hpa
 ```bash
 # delete the resources
 helm uninstall ifs
-
-# jump back to home directory `kubernetes_helm`:
-cd -
 ```

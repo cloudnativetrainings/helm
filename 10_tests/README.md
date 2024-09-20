@@ -83,7 +83,4 @@ kubectl logs -l job-name=my-app-test
 # delete the resources
 helm uninstall my-app
 kubectl delete job my-app-test
-
-# jump back to home directory `kubernetes_helm`:
-cd -
 ```
