@@ -1,6 +1,6 @@
 {
     "name": "Helm Training Labs",
-    "image": "quay.io/kubermatic-labs/devcontainers:helm-b7bf217",
+    "image": "quay.io/kubermatic-labs/devcontainers:helm-cb99c75",
     "customizations": {
       "vscode": {
         "settings": {
