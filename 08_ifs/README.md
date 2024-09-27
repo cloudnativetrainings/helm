@@ -149,7 +149,7 @@ As you see, HPA is not enabled by default.
 Now, let's enable HPA:
 
 ```bash
-helm upgrade ifs ./my-chart --set horizantalPodAutoscaler.enabled=true
+helm upgrade ifs ./my-chart --set horizontalPodAutoscaler.enabled=true
 ```
 
 Checkout if a HPA is created:
